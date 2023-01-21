@@ -10,7 +10,7 @@ const App = () => {
     <>
       <BrowserRouter>
       <Header />
-        <main className="sm:-8 px-4 py-2 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)">
+        <main className="sm:-8 px-4 py-2 w-full bg-[#f9fafe] min-h-[calc(100vh-73px) mb-20">
           <Routes>
             <Route path="/" element={<HomePage/> }/>
             <Route path="/create-post" element={<CreatePostPage/> }/>
