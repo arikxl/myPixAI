@@ -25,7 +25,7 @@ const CardItem = ({ _id, name, prompt, photo }) => {
             <img src={download} alt='download button'
             className='w-10 h-10 object-contain invert '/>
           </button>
-          <FacebookShareBtn url={ photo} />
+          {/* <FacebookShareBtn url={ photo} /> */}
         </div>
       </div>
     </div>

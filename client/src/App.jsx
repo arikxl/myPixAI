@@ -15,7 +15,8 @@ const App = () => {
             <Route path="/" element={<HomePage/> }/>
             <Route path="/create-post" element={<CreatePostPage/> }/>
           </Routes> 
-      </main>
+        </main>
+        <Footer />
       </BrowserRouter>
     </>
   )

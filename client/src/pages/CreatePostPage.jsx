@@ -25,7 +25,7 @@ const CreatePostPage = () => {
       setIsLoading(true);
 
       try {
-        const response = await fetch('http://localhost:5000/api/v1/post', {
+        const response = await fetch('https://mypixai.onrender.com/api/v1/post', {
           method: 'POST',
           headers: {
              'Content-Type': 'application/json'
@@ -34,9 +34,7 @@ const CreatePostPage = () => {
         })
 
         await response.json();
-        console.log()
-
-        // navigate('/')
+        navigate('/')
       } catch (error) {
         alert(error)
       } finally {
@@ -61,7 +59,7 @@ const CreatePostPage = () => {
     if (form.prompt) {
       try {
         setIsGenerating(true);
-        const response = await fetch('http://localhost:5000/api/v1/dalle', {
+        const response = await fetch('https://mypixai.onrender.com/api/v1/dalle', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -85,10 +83,10 @@ const CreatePostPage = () => {
     <section className='max-w-7xl mx-auto'>
       <div>
         <h1 className="font-extrabold text-[#222328] text-[32px]">
-          Create
+          Create a new pic
         </h1>
         <p className="mt-2 text-[#666e75] text-[16] max-w[500px]">
-          Create imaginative and visually stunning images through DALL-E AI and share them with the community.
+          Generate imaginative and visually stunning pic through DALL-E AI and share them.
         </p>
       </div>
 
@@ -98,15 +96,15 @@ const CreatePostPage = () => {
             labelName='Your name'
             type='text'
             name='name'
-            placeholder='Israel israeli'
+            placeholder='Israel/a Israeli'
             value={form.name}
             handleChange={handleChange}
           />
           <FormField
-            labelName='Prompt'
+            labelName='Write here your creative idea.'
             type='text'
             name='prompt'
-            placeholder='a cool hamster in a football match with a red shirt'
+            placeholder='realistic cool hamster in a football match with a red shirt'
             value={form.prompt}
             handleChange={handleChange}
             isSurpriseMe
@@ -143,14 +141,14 @@ const CreatePostPage = () => {
 
         <div className="mt-10 ">
           <p className='mt-2 text-[#666e75] text-[14px]'>
-            Once you have created the image you want, you can share it with the community.
+            Once you have created the image you want, you can share it with the world.
           </p>
           <button type='button' onClick={shareImg}
             className='mt-3 text-white bg-[#55efc4] font-medium rounded-md text-sm 
             w-full sm:w-auto px-5 py-2.5  text-center'>
-            {isLoading ? 'Sharing...' : 'Share with the community'}
+            {isLoading ? 'Sharing...' : 'Share on myPix'}
           </button>
-          <FacebookShareBtn url={form?.photo } />
+          {/* <FacebookShareBtn url={form?.photo } /> */}
 
         </div>
       </form>
