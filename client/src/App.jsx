@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
 
 import { HomePage, CreatePostPage } from './pages'
-import { Header } from './components';
+import { Header, Footer } from './components';
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
             <Route path="/create-post" element={<CreatePostPage/> }/>
           </Routes> 
         </main>
-        <Footer />
+        <Footer/>
       </BrowserRouter>
     </>
   )

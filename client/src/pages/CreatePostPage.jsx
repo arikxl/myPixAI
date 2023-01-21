@@ -83,10 +83,10 @@ const CreatePostPage = () => {
     <section className='max-w-7xl mx-auto'>
       <div>
         <h1 className="font-extrabold text-[#222328] text-[32px]">
-          Create a new pic
+          Create new pix
         </h1>
         <p className="mt-2 text-[#666e75] text-[16] max-w[500px]">
-          Generate imaginative and visually stunning pic through DALL-E AI and share them.
+          Generate artistic and unique pix through DALL-E AI and share them
         </p>
       </div>
 
@@ -101,7 +101,7 @@ const CreatePostPage = () => {
             handleChange={handleChange}
           />
           <FormField
-            labelName='Write here your creative idea.'
+            labelName='Write here your creative idea'
             type='text'
             name='prompt'
             placeholder='realistic cool hamster in a football match with a red shirt'
@@ -141,7 +141,7 @@ const CreatePostPage = () => {
 
         <div className="mt-10 ">
           <p className='mt-2 text-[#666e75] text-[14px]'>
-            Once you have created the image you want, you can share it with the world.
+            Once you have created the image you want, you can share it with the world
           </p>
           <button type='button' onClick={shareImg}
             className='mt-3 text-white bg-[#55efc4] font-medium rounded-md text-sm 
