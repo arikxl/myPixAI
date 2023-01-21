@@ -59,7 +59,7 @@ const HomePage = () => {
         </p>
       </div>
 
-      <div className="mt-10">
+      <div className="mt-8">
         <FormField labelName="Search Pix" type="text" name="text"
           value={searchText} handleChange={handleSearchChange}
           placeholder="Search photos by description or a name" />

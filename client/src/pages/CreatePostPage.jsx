@@ -86,7 +86,7 @@ const CreatePostPage = () => {
           Create new pix
         </h1>
         <p className="mt-2 text-[#666e75] text-[16] max-w[500px]">
-          Generate artistic and unique pix through DALL-E AI and share them
+          Generate artistic and unique pix through DALL-E A.I and share them
         </p>
       </div>
 
