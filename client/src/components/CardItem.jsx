@@ -25,6 +25,9 @@ const CardItem = ({ _id, name, prompt, photo }) => {
             <img src={download} alt='download button'
             className='w-10 h-10 object-contain invert '/>
           </button>
+          <a description='download button' href={`https://www.facebook.com/sharer/sharer.php?u=${photo}`} target="_blank">
+            <svg className="share-icon" xmlns="http://www.w3.org/2000/svg" style={{ width: 20 }} viewBox="0 0 512 512" aria-label="fb" role="img"><path d="m375.14,288l14.22,-92.66l-88.91,0l0,-60.13c0,-25.35 12.42,-50.06 52.24,-50.06l40.42,0l0,-78.89s-36.68,-6.26 -71.75,-6.26c-73.22,0 -121.08,44.38 -121.08,124.72l0,70.62l-81.39,0l0,92.66l81.39,0l0,224l100.17,0l0,-224l74.69,0z"></path></svg>
+          </a>
           {/* <FacebookShareBtn url={ photo} /> */}
         </div>
       </div>

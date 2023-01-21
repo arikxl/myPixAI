@@ -24,8 +24,11 @@ const FacebookShareBtn = ({url}) => {
     const handleClick = () => {
         // Open the Share Dialog
         FB.ui({
-            method: 'share',
-            href: url,
+            method: 'feed',
+            link: url,
+            description: 'This image was created in myPix app',
+            caption: 'This image was created in myPix app',
+
         }, function (response) { });
     }
 

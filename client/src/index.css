@@ -28,9 +28,8 @@
   
 }
 
-.logo-svg{
-    stroke: #55efc4;
-    fill : red;
+.share-icon{
+  fill: #55efc4;
 }
 
 .loader {
