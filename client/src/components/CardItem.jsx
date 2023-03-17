@@ -8,7 +8,7 @@ import FacebookShareBtn from './FacebookShareBtn';
 const CardItem = ({ _id, name, prompt, photo }) => {
   return (
     <div className='rounded-xl group relative shadow-card hover:shadow-cardhover card'>
-      <img src={photo} alt={prompt}
+      <img src={photo} alt={prompt} loading="lazy"
         className='w-full h-auto object-cover rounded-xl' />
       <div className='group-hover:flex flex-col hidden max-h-[94.5%]
       absolute bottom-0 left-0 right-0 bg-[#10131f] m-2 p-4 rounded-md '>
